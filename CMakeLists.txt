@@ -10,7 +10,9 @@ include_directories(${GTEST_INCLUDE_DIRS})
 
 
 include_directories(include)
-file(GLOB SOURCES "src/Logger.cpp" "src/LoggerGTests.cpp")
+file(GLOB SOURCES "src/Logger.cpp" "tests/LoggerGTests.cpp")
 add_executable(LoggerGTests ${SOURCES})
+add_executable(main "main.cpp" "src/Logger.cpp")
+
 target_link_libraries(LoggerGTests ${GTEST_LIBRARIES} pthread)
-#add_executable(testline "src/TestLine.cpp")
+

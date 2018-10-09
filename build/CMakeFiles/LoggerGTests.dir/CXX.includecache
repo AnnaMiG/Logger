@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/logger/Logger.hpp
+string
+../include/logger/string
+
+/home/prodrone/Documents/Anna/Logger/src/Logger.cpp
+fstream
+-
+iostream
+-
+string
+-
+time.h
+-
+sys/time.h
+-
+iomanip
+-
+logger/Logger.hpp
+/home/prodrone/Documents/Anna/Logger/src/logger/Logger.hpp
+
+/home/prodrone/Documents/Anna/Logger/tests/LoggerGTests.cpp
+gtest/gtest.h
+-
+logger/Logger.hpp
+-
+fstream
+-
+string
+-
+vector
+-
+sstream
+-
+
