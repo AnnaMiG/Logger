@@ -11,7 +11,7 @@
 Logger::Logger(std::string p) : path(p) { }  //constructor takes path to file as argument
 
 
-///@return unix time
+/// @return unix time
 
 long double Logger::unixTimeStamp()
 {
@@ -31,20 +31,20 @@ long double Logger::unixTimeStamp()
 }
 
 /**
- *this function is used to log to the file log.txt
- *it logs input values in any format followed by a timestamp
- *@param the type and the value of what we want to log
- *if the type is a boolean it must be logged as false/true
- *if the type is an integer it must not have decimal point
+ * this function is used to log to the file log.txt
+ * it logs input values in any format followed by a timestamp
+ * if the type is a boolean it must be logged as false/true
+ * if the type is an integer it must not have decimal point
+ * @param the type and the value of what we want to log
  */
 void Logger::log(std::string type, std::string value)
 {
     std::string path = " ";
-    ///the three arguments that will be logged to log.txt
+    /// the three arguments that will be logged to log.txt
     int in_1 = 0;
     std::string in_2 = " ";
     long double in_3 = 0.0;
-    ///temp is used to convert float to int
+    /// temp is used to convert float to int
     int temp = 0;
     if (type == "bool")
     {
@@ -58,7 +58,7 @@ void Logger::log(std::string type, std::string value)
     }
     else  in_2 = value;
     in_3 = unixTimeStamp();
-    ///num will be used to find out how many lines are in log.txt
+    /// num will be used to find out how many lines are in log.txt
     int num = 0;
     char c = ' ';
     std::fstream f;
@@ -78,7 +78,7 @@ void Logger::log(std::string type, std::string value)
     std::ofstream f_out;
     f_out.open(file_name.c_str(), std::ios_base::app | std::ios_base::out);
     in_1 = num + 1;
-    ///write into log.txt the 3 arguments in_1, in_2, in_3
+    /// write into log.txt the 3 arguments in_1, in_2, in_3
     f_out << in_1 << " , " << in_2 << " , " << std::fixed << std::setprecision(6) << in_3 << std::endl;
     f_out.close();
 }
