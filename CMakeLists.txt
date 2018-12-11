@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.80)
 
-project(Logger)
+project(logger)
 
 
 set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
