@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11    CMakeFiles/LoggerGTests.dir/src/Logger.cpp.o CMakeFiles/LoggerGTests.dir/tests/LoggerGTests.cpp.o  -o LoggerGTests -rdynamic -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

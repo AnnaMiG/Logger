@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11    CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/src/Logger.cpp.o  -o main -rdynamic 

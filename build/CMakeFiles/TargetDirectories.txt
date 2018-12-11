@@ -1,4 +1,0 @@
-/home/prodrone/Documents/Anna/Logger/build/CMakeFiles/rebuild_cache.dir
-/home/prodrone/Documents/Anna/Logger/build/CMakeFiles/edit_cache.dir
-/home/prodrone/Documents/Anna/Logger/build/CMakeFiles/main.dir
-/home/prodrone/Documents/Anna/Logger/build/CMakeFiles/LoggerGTests.dir
