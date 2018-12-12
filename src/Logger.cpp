@@ -1,4 +1,3 @@
-//this is the Logger class
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -8,11 +7,9 @@
 #include "logger/Logger.hpp"
  
        
-Logger::Logger(std::string p) : path(p) { }  //constructor takes path to file as argument
-
+Logger::Logger(std::string p) : path(p) {}  //constructor takes path to file as argument
 
 /// @return unix time
-
 long double Logger::unixTimeStamp()
 {
     time_t time_stamp_sec; // timestamp in seconds
@@ -39,10 +36,9 @@ long double Logger::unixTimeStamp()
  */
 void Logger::log(std::string type, std::string value)
 {
-    std::string path = " ";
     /// the three arguments that will be logged to log.txt
     int in_1 = 0;
-    std::string in_2 = " ";
+    std::string in_2;
     long double in_3 = 0.0;
     /// temp is used to convert float to int
     int temp = 0;

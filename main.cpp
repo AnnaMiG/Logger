@@ -1,6 +1,6 @@
-#include "logger/Logger.hpp"
 #include "string"
 #include <iostream>
+#include "logger/Logger.hpp"
 
 /**
  * This function is used to call the log function of the class Logger and
@@ -10,8 +10,8 @@
 
 main()
 {
-    std::string type = "";
-    std::string value = "";
+    std::string type;
+    std::string value;
     // path to log.txt
     std::string p = "/Documents";
     /// user inputs the type and value he wants to log
