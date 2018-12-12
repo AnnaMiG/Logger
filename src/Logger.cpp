@@ -6,10 +6,9 @@
 #include <iomanip>
 #include "logger/Logger.hpp"
  
-       
 Logger::Logger(std::string p) : path(p) {}  //constructor takes path to file as argument
-
 /// @return unix time
+
 long double Logger::unixTimeStamp()
 {
     time_t time_stamp_sec; // timestamp in seconds

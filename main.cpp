@@ -1,6 +1,6 @@
+#include "logger/Logger.hpp"
 #include "string"
 #include <iostream>
-#include "logger/Logger.hpp"
 
 /**
  * This function is used to call the log function of the class Logger and
@@ -23,3 +23,4 @@ main()
     /// here the data is logged
     LoggerObj.log(type, value);
 }
+
